@@ -1,4 +1,5 @@
 Constantes {
     constante HELLO_WORLD_TITLE = « New title Hello world »
     constante HELLO_WORLD_TEXT = « New Hello world text »
+    constante NEW_CONST = 20
 }
