@@ -1,0 +1,16 @@
+#!/bin/bash
+
+FILEPATH=suivi
+FILENAME=commitInfo
+
+read -p "Ajouter un certificat de vérification au commit (y/[n]) ?" yn < /dev/tty
+yn=${yn:n}
+case $yn in
+[Yy]* )
+echo "commit vérifié le $(date)" > $FILEPATH/$FILENAME.txt
+git add $FILEPATH/$FILENAME.txt
+exit 0;;
+[Nn]* )
+exit 0;;
+esac
+exit 0
